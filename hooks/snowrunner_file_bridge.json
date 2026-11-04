@@ -1,0 +1,15 @@
+{
+  "schema": "g923-linux-control/hook@1",
+  "name": "SnowRunner file bridge",
+  "description": "Reads RPM telemetry that a SnowRunner telemetry bridge writes as JSON. Enable the bridge, then update source.path if it writes elsewhere.",
+  "poll_interval_ms": 80,
+  "source": {
+    "type": "file",
+    "path": "~/.local/share/g923-linux-control/snowrunner-telemetry.json"
+  },
+  "fields": {
+    "rpm": "engineRpm",
+    "max_rpm": "maxRpm",
+    "throttle": "throttle"
+  }
+}

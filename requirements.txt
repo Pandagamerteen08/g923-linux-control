@@ -1,0 +1,4 @@
+# Runtime dependencies for G923 Linux Control.
+# Install with: python3 -m pip install -r requirements.txt
+PyQt6>=6.6,<7.0
+evdev>=1.6,<2.0
